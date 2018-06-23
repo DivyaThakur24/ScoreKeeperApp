@@ -7,64 +7,84 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int ScoreTeamA = 0;
-    int ScoreTeamB = 0;
+    int scoreTeamA;
+    int scoreTeamB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-    }  /**
-         * Increase the score for Player 1 by 3 point.
-         */
-    public void TeamA(View v){
-        ScoreTeamA = ScoreTeamA + 3;
-        displayForTeamA(ScoreTeamA);
+    }
+    /**
+     * This method is called when the button ember is pressed.
+     */
+    public void ember(View v){
+        scoreTeamA = scoreTeamA + 3;
+        displayForTeamA(scoreTeamA);
     }
 
-    public void TeamB(View v){
-        ScoreTeamA = ScoreTeamA + 2;
-        displayForTeamA(ScoreTeamA);
+    /**
+     * This method is called when the button HeadButt is pressed.
+     */
+    public void headButt(View v){
+        scoreTeamA = scoreTeamA + 2;
+        displayForTeamA(scoreTeamB);
     }
 
-    public void TeamC(View v){
-        ScoreTeamA = ScoreTeamA + 1;
-        displayForTeamA(ScoreTeamA);
+    /**
+     * This method is called when the button FireTail is pressed.
+     */
+    public void fireTail(View v){
+        scoreTeamA = scoreTeamA + 1;
+        displayForTeamA(scoreTeamA);
     }
 
-    public void resetscore (View v){
-        ScoreTeamA = 0;
-        ScoreTeamB = 0;
-        displayForTeamA(ScoreTeamA);
-        displayForTeamB(ScoreTeamB);
-    }
-    public void TeamA1(View v){
-        ScoreTeamB = ScoreTeamB + 3;
-        displayForTeamB(ScoreTeamB);
+    /**
+     * This method is called when the button ElectraBuzz is pressed.
+     */
+    public void electraBuzz(View v){
+        scoreTeamB = scoreTeamB + 3;
+        displayForTeamB(scoreTeamB);
     }
 
-    public void TeamB1(View v){
-        ScoreTeamB = ScoreTeamB + 2;
-        displayForTeamB(ScoreTeamB);
+    /**
+     * This method is called when the button ThunderBolt is pressed.
+     */
+    public void thunderBolt(View v){
+        scoreTeamB = scoreTeamB + 2;
+        displayForTeamB(scoreTeamB);
     }
 
-    public void TeamC1(View v){
-        ScoreTeamB = ScoreTeamB + 1;
-        displayForTeamB(ScoreTeamB);
+    /**
+     * This method is called when the button ElectricPwr is pressed.
+     */
+    public void electricPwr(View v){
+        scoreTeamB = scoreTeamB + 1;
+        displayForTeamB(scoreTeamB);
     }
     /**
      * Displays the given score for Team A.
      */
     public void displayForTeamA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.teamAscore);
-        scoreView.setText(String.valueOf(score));
+        TextView teamAScore = (TextView) findViewById(R.id.teamAscore);
+        teamAScore.setText(String.valueOf(score));
     }
     /**
      * Displays the given score for Team B.
      */
     public void displayForTeamB(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.teamBscore);
-        scoreView.setText(String.valueOf(score));
+        TextView teamBScore = (TextView) findViewById(R.id.teamBscore);
+        teamBScore.setText(String.valueOf(score));
+    }
+
+    /**
+     * This method is called when the Button Reset is pressed.
+     */
+    public void resetScore (View v){
+        scoreTeamA = 0;
+        scoreTeamB = 0;
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
     }
 }

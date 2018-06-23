@@ -5,19 +5,21 @@
     android:background="#040404"
     android:layout_height="match_parent">
 
+    <!-- Hard-code all strings and dimens value -->
+
     <ImageView
         android:id="@+id/pi"
         android:layout_width="85dp"
         android:layout_height="85dp"
         android:layout_marginLeft="240dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="24dp"
         android:src="@drawable/pikachu"/>
 
     <ImageView
         android:id="@+id/charmander"
         android:layout_width="85dp"
         android:layout_height="85dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="24dp"
         android:layout_marginLeft="35dp"
         android:src="@drawable/charmander"/>
 
@@ -25,6 +27,7 @@
         android:id="@+id/pokeball"
         android:layout_width="75dp"
         android:layout_height="75dp"
+        android:layout_marginTop="8dp"
         android:layout_marginLeft="145dp"
         android:layout_marginRight="12dp"
         android:src="@drawable/pokeball"/>
@@ -40,6 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
+            android:layout_marginTop="32dp"
             tools:context="com.example.android.courtcounter.MainActivity">
 
             <TextView
@@ -49,6 +53,7 @@
                 android:fontFamily="sans-serif-light"
                 android:gravity="center_horizontal"
                 android:layout_marginTop="85dp"
+                android:layout_marginBottom="16dp"
                 android:padding="4dp"
                 android:text="0"
                 android:textColor="#FA7208"
@@ -57,30 +62,32 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="16dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="TeamA"
+                android:onClick="ember"
                 android:text="Ember"
                 android:background="#FA7208"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="TeamB"
+                android:onClick="headButt"
                 android:text="HeadButt"
                 android:background="#FA7208"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="TeamC"
+                android:onClick="fireTail"
                 android:text="FireTail"
                 android:background="#FA7208"/>
 
@@ -100,6 +107,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
+            android:layout_marginTop="32dp"
             tools:context="com.example.android.courtcounter.MainActivity">
 
 
@@ -111,6 +119,7 @@
                 android:gravity="center_horizontal"
                 android:padding="4dp"
                 android:layout_marginTop="85dp"
+                android:layout_marginBottom="16dp"
                 android:text="0"
                 android:textColor="#FA7208"
                 android:textSize="56sp" />
@@ -118,30 +127,32 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="16dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="TeamA1"
+                android:onClick="electraBuzz"
                 android:text="Electrabuzz"
                 android:background="#FA7208"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="TeamB1"
+                android:onClick="thunderBolt"
                 android:text="Thunderbolt"
                 android:background="#FA7208"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="TeamC1"
+                android:onClick="electricPwr"
                 android:text="ElectricPwr"
                 android:background="#FA7208"/>
 
@@ -156,7 +167,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
-        android:onClick="resetscore"
+        android:onClick="resetScore"
         android:background="#FA7208"
         android:text="Reset" />
 </RelativeLayout>
